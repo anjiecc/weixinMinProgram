@@ -1,0 +1,32 @@
+.vip-wrap {
+    margin-bottom: 30rpx;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 20rpx 20rpx 10rpx 20rpx;
+}
+
+.vip-img {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+
+.user-image {
+    margin-right: 40rpx;
+}
+
+.user-name {
+    font-size: 30rpx;
+}
+
+.name {
+    font-size: 32rpx;
+    color: #000;
+}
+
+.vip-tips {
+    color: #666565;
+    font-size: 26rpx;
+    display: block;
+}

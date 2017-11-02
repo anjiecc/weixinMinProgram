@@ -1,0 +1,35 @@
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.setting-content {
+    margin-top: 20rpx;
+}
+
+.setting-title {
+    font-size: 27rpx;
+    color: rgb(211, 211, 211);
+    padding: 0 20rpx;
+}
+
+.setting-list {
+    font-size: 30rpx;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 100rpx;
+    line-height: 100rpx;
+    padding: 0 20rpx;
+    margin-top: 5rpx;
+}
+
+.setting-name {
+    color: #000;
+}
+
+.s-img {
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: -9rpx;
+}

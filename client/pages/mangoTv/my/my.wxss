@@ -1,0 +1,89 @@
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.my-login {
+    width: 100%;
+    height: 200rpx;
+    background-color: #fff;
+    padding-top: 20rpx;
+}
+
+.my-login-icon {
+    width: 120rpx;
+    height: 120rpx;
+    margin: 0 auto;
+}
+
+.radius {
+    border-radius: 50%;
+}
+
+.my-login-name {
+    font-size: 28rpx;
+    color: #333;
+    margin-top: 20rpx;
+    text-align: center;
+}
+
+.my-list-content {
+    margin-top: 15rpx;
+}
+
+.my-list {
+    height: 90rpx;
+    margin-top: 10rpx;
+    background-color: #fff;
+    color: #000;
+    font-size: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    line-height: 90rpx;
+    padding: 0 20rpx;
+}
+
+.my-info {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 200rpx;
+}
+
+.my-scroll {
+    height: 210rpx;
+}
+
+.my-layout {
+    margin-left: 20rpx;
+}
+
+.my-info-img {
+    width: 300rpx;
+    height: 170rpx;
+}
+
+.my-info-text {
+    font-size: 28rpx;
+    color: #000;
+}
+
+.my-list-content .top {
+    margin-top: 20rpx;
+}
+
+.imgs {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.my-text {
+    vertical-align: 8rpx;
+    margin-left: 20rpx;
+}
+
+.more {
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: 12rpx;
+}

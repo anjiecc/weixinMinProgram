@@ -1,0 +1,123 @@
+.gtext {
+    font-size: 32rpx;
+    color: #000;
+    text-align: center;
+}
+
+.noAttention {
+    padding: 15rpx 10rpx;
+    height: 200rpx;
+    background-color: #fff;
+}
+
+.recommend {
+    margin: 20rpx 0 0 0;
+    background-color: #fff;
+    height: 400rpx;
+}
+
+.view-content {
+    margin-top: 20rpx;
+    background-color: #fff;
+    /* height:400rpx; */
+}
+
+.view-content-title {
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+    justify-content: space-between
+}
+
+.title {
+    font-size: 35rpx;
+    color: #000;
+    font-weight: 600;
+}
+
+.title:before {
+    content: " ";
+    border-left: 8rpx solid #df692a;
+    margin-right: 10rpx;
+}
+
+.attentionBtn {
+    width: 95rpx;
+    height: 40rpx;
+    font-size: 28rpx;
+    padding: 5rpx 15rpx;
+    background-color: #fff;
+    color: #df692a;
+    border-radius: 20rpx;
+    border: 1px solid #df692a;
+    margin-top: 35rpx;
+    line-height: 40rpx;
+}
+
+.load-more {
+    font-size: 30rpx;
+    color: #df692a;
+    width: 100%;
+    text-align: center;
+    padding: 20rpx 0;
+}
+
+.gimg {
+    width: 100%;
+    height: 375rpx;
+    position: relative
+}
+
+.main-title {
+    color: #333;
+    font-size: 30rpx;
+    margin-top: 20rpx;
+}
+
+.des {
+    color: #afafaf;
+    font-size: 25rpx;
+    margin-top: 20rpx;
+}
+
+.gtime {
+    font-size: 32rpx;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.attentionBtn {
+    width: 95rpx;
+    height: 40rpx;
+    font-size: 28rpx;
+    padding: 5rpx 15rpx;
+    background-color: #fff;
+    color: #df692a;
+    border-radius: 20rpx;
+    border: 1px solid #df692a;
+    margin-top: 35rpx;
+    line-height: 40rpx;
+}
+
+.g-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20rpx;
+}
+
+.g-bar {
+    margin-top: 20rpx;
+}
+
+.no-load-more {
+    font-size: 30rpx;
+    color: #858484;
+    width: 100%;
+    text-align: center;
+    padding: 20rpx 0;
+    margin-top: 30rpx;
+}

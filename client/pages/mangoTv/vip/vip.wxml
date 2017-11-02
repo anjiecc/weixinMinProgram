@@ -1,0 +1,11 @@
+<view class="vip-wrap">
+    <view class="user-image">
+        <image src="{{userInfo.avatarUrl}}" class="vip-img"/>
+    </view>
+    <view class="user-name">
+        <text class="name">{{userInfo.nickName}}</text>
+        <text class="vip-tips">开通会员免费看大片</text>
+    </view>
+</view>
+
+<view></view>

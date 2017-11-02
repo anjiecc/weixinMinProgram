@@ -1,0 +1,51 @@
+<view class="movie">
+  <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{interval}}" duration="{{duration}}">
+
+    <block wx:for="{{list.page1004.rotationImages}}" wx:key="{{item.picUrl}}">
+      <swiper-item>
+        <navigator url="../play/play?url={{items.playUrl}}&id={{item.indexs}}&name={{items.name}}&cid={{items.cid}}&currentPage={{currentPage}}" hover-class="navigator-hover" style="width:100%;height:100%">
+          <image src="{{item.picUrl}}" class="slide-image" />
+        </navigator>
+      </swiper-item>
+    </block>
+
+  </swiper>
+  <view class="real-time-msg" wx:if="{{list.page1004.rollData.length > 0}}">
+   <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+        <block wx:for="{{list.page1004.rollData}}" wx:for-item="real" wx:key="{{index}}">
+            <navigator url="../play/play?url={{real.playUrl}}&id={{real.indexs}}&name={{real.name}}&cid={{real.cid}}&currentPage={{currentPage}}" open-type="navigate">
+                <swiper-item>
+                <view class="swiper_item">{{real.name}}</view>
+                </swiper-item>
+            </navigator>
+        </block>
+    </swiper>
+  </view>
+  <view wx:for="{{list.page1004.list}}" wx:key="{{index}}">
+    <view class="view-content">
+      <view class="view-content-title">
+        <text class="title">{{item.title || item.name1}}</text>
+        <!-- <view class="inline">
+          <icon type="waiting" size="17" color="#df692a" class="icon" />
+          <text class="change-change">换一换</text>
+        </view> -->
+      </view>
+      <view class="content">
+        <view class="inline bar" wx:for="{{item.list}}" wx:key="{{index}}" wx:for-item="items">
+        <navigator url="../play/play?url={{items.playUrl}}&id={{item.indexs}}&name={{items.name}}&cid={{items.cid}}&currentPage={{currentPage}}">
+          <view class="img">
+            <image src="{{items.picUrl}}" />
+            <text class="time">{{items.tag}}</text>
+          </view>
+        </navigator>
+          <view class="line main-title">
+           {{items.name}}
+          </view>
+          <view class="line des">
+           {{items.desc}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<view>
+    <text class="help-title">常见问题</text>
+    <view wx:for="{{list}}" wx:key="{{index}}">
+        <navigator url="{{item.url}}" class="help-list">
+            <view class="help-name">{{item.name}}</view>
+            <view class="more">
+                <image class="h-img" src="../../../image/more.png"/>
+            </view>
+        </navigator> 
+    </view>
+    <view class="help-tip">
+        <view class="help-war">程序是仿照芒果TVApp实现,只作为学习使用</view>
+        <view class="help-war">请下载正版芒果TVApp观看视频</view>
+        <view class="help-war">@Author:<text class="author">Anjie.Chen</text></view>
+    </view>
+    <view class="submitBtn">提交意见反馈</view>
+</view>

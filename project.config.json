@@ -1,0 +1,8 @@
+{
+	"client": "./client",
+	"svr": "./server",
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"appid": "wxa74405d4d0dc8aed",
+	"projectname": "MangoTvwx"
+}

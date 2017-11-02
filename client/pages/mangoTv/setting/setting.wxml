@@ -1,0 +1,123 @@
+<view class="setting-content">
+    <text class="setting-title">安全设置</text>
+    <view class="setting-list">
+        <view class="setting-name">账号与安全</view>
+        <view></view>
+    </view>
+</view>
+
+<view class="setting-content">
+    <text class="setting-title">播放设置</text>
+    <view class="setting-list">
+        <view class="setting-name">3G/4G流量播放时提醒我</view>
+        <view>
+             <switch checked bindchange="switch1Change"/>
+        </view>
+    </view>
+    <view class="setting-list">
+        <view class="setting-name">跳过片头片尾</view>
+        <view>
+             <switch checked bindchange="switch1Change"/>
+        </view>
+    </view>
+</view>
+
+<view class="setting-content">
+    <text class="setting-title">离线缓存设置</text>
+    <view class="setting-list">
+        <view class="setting-name">3G/4G流量播放时提醒我</view>
+        <view>
+             <switch bindchange="switch1Change"/>
+        </view>
+    </view>
+    <view class="setting-list">
+        <view class="setting-name">缓存清晰度</view>
+        <view class="more">
+            <text>标清</text>
+            <image class="s-img" src="../../../image/more.png"/>
+        </view>  
+    </view>
+    <view class="setting-list">
+        <view class="setting-name">同时缓存个数</view>
+        <view class="more">
+            <text>1个</text>
+            <image class="s-img" src="../../../image/more.png"/>
+        </view>  
+    </view>
+    <view class="setting-list">
+        <view class="setting-name">缓存路径</view>
+        <view class="more">
+            <text>手机存储</text>
+            <image class="s-img" src="../../../image/more.png"/>
+        </view>  
+    </view>
+    <view class="setting-list">
+        <view class="setting-name">允许运营商网络下载</view>
+        <view>
+           <switch bindchange="switch1Change"/>
+        </view>  
+    </view>
+</view>
+
+<view class="setting-content">
+    <text class="setting-title">推送设置</text>
+    <view class="setting-list">
+        <view class="setting-name">热门内容推送</view>
+        <view>
+             <switch bindchange="switch1Change"/>
+        </view>
+    </view>
+</view>
+
+<view class="setting-content">
+    <text class="setting-title">消息</text>
+    <view class="setting-list">
+        <view class="setting-name">评论消息</view>
+        <view>
+             <switch checked bindchange="switch1Change"/>
+        </view>
+    </view>
+     <view class="setting-list">
+        <view class="setting-name">点赞消息</view>
+        <view>
+             <switch checked bindchange="switch1Change"/>
+        </view>
+    </view>
+</view>
+
+<view class="setting-content">
+    <text class="setting-title">其他</text>
+    <view class="setting-list">
+        <view class="setting-name">关于MangoTv</view>
+        <view class="more">
+            <image class="s-img" src="../../../image/more.png"/>
+        </view> 
+    </view>
+   <view class="setting-list">
+        <view class="setting-name">软件许可及服务协议</view>
+        <view class="more">
+            <image class="s-img" src="../../../image/more.png"/>
+        </view> 
+    </view>
+    <view class="setting-list">
+        <view class="setting-name">隐私协议</view>
+        <view class="more">
+            <image class="s-img" src="../../../image/more.png"/>
+        </view> 
+    </view>
+    <view class="setting-list">
+        <view class="setting-name">帮助与反馈</view>
+        <view class="more">
+            <image class="s-img" src="../../../image/more.png"/>
+        </view> 
+    </view>
+</view>
+
+<view class="setting-content">
+    <view class="setting-list">
+        <view class="setting-name">问卷调查</view>
+        <view class="more">
+            <image class="s-img" src="../../../image/more.png"/>
+        </view> 
+    </view>
+</view>

@@ -1,0 +1,105 @@
+<view class="my">
+   <view class="my-login" bindtap="login">        
+        <view class="my-login-icon">
+            <image wx:if="{{!logged}}" class="img" src="../../../image/my.png" />
+            <image wx:if="{{logged}}" class="img radius" src="{{userInfo.avatarUrl}}" />
+        </view>
+        <view class="my-login-name" wx:if="{{!logged}}">点击登录</view>
+        <view class="my-login-name" wx:if="{{logged}}">{{userInfo.nickName}}</view>
+   </view>
+   <view class="my-list-content">
+        <view class="my-list" id="vip" bindtap="go">
+            <view class="my-icon">
+                <image class="imgs" src="../../../image/jewelry.png"/>
+                <label class="my-text">开通会员</label>
+            </view>
+            <view class="more">
+                <image class="img" src="../../../image/more.png"/>
+            </view>    
+        </view>  
+        <view class="my-list" bindtap="go">
+           <view class="my-icon">
+                <image class="imgs" src="../../../image/email.png"/>
+                <label class="my-text">消息中心</label>
+            </view>
+            <view class="more">
+                <image class="img" src="../../../image/more.png"/>
+            </view>  
+        </view>
+        <view class="my-list" bindtap="go">
+           <view class="my-icon">
+                <image class="imgs" src="../../../image/history.png"/>
+                <label class="my-text">播放历史</label>
+            </view>
+            <view class="more">
+                <image class="img" src="../../../image/more.png"/>
+            </view>  
+        </view>
+
+        <view wx:if="{{playList.length > 0}}"><include src="../template/hist"/></view>
+
+        <view class="my-list" bindtap="go">
+           <view class="my-icon">
+                <image class="imgs" src="../../../image/hcselect.png"/>
+                <label class="my-text">离线缓存</label>
+            </view>
+            <view class="more">
+                <image class="img" src="../../../image/more.png"/>
+            </view>  
+        </view>
+
+       <view wx:if="{{playList.length > 0}}"><include src="../template/hist"/></view>
+        
+        <view class="my-list" bindtap="go">
+           <view class="my-icon">
+                <image class="imgs" src="../../../image/wpselect.png"/>
+                <label class="my-text">我的收藏</label>
+            </view>
+            <view class="more">
+                <image class="img" src="../../../image/more.png"/>
+            </view>  
+        </view>
+        <view class="my-list top" id="vipChangeCard" bindtap="go">
+           <view class="my-icon">
+                <image class="imgs" src="../../../image/jxselect.png"/>
+                <label class="my-text">会员卡兑换</label>
+            </view>
+            <view class="more">
+                <image class="img" src="../../../image/more.png"/>
+            </view>  
+        </view>
+        <view class="my-list" bindtap="go">
+           <view class="my-icon">
+                <image class="imgs" src="../../../image/bags.png"/>
+                <label class="my-text">芒果流量商城</label>
+            </view>
+            <view class="more">
+                <image class="img" src="../../../image/more.png"/>
+            </view>  
+        </view>
+        <view class="my-list" bindtap="go">
+           <view class="my-icon">
+                <image class="imgs" src="../../../image/video.png"/>
+                <label class="my-text">投屏助手</label>
+            </view>
+            <view class="more">
+                <image class="img" src="../../../image/more.png"/>
+            </view>  
+        </view>
+        <view class="my-list top" id="help" bindtap="go">
+           <view class="my-icon">
+                <image class="imgs" src="../../../image/help.png"/>
+                <label class="my-text">帮助反馈</label>
+            </view>
+            <view class="more">
+                <image class="img" src="../../../image/more.png"/>
+            </view>  
+        </view>
+        <view class="my-list" id="setting" bindtap="go">
+           <view class="my-icon">
+                <image class="imgs" src="../../../image/set.png"/>
+                <label class="my-text">设置</label>
+            </view>
+        </view>                        
+   </view>
+</view>

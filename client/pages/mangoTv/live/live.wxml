@@ -1,0 +1,83 @@
+<view>
+   <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{list.page1001.rotationImages}}" wx:key="{{item.picUrl}}">
+      <swiper-item>
+        <navigator url="../play/play?url={{items.playUrl}}&id={{item.indexs}}&name={{items.name}}&cid={{items.cid}}&currentPage={{currentPage}}" hover-class="navigator-hover" style="width:100%;height:100%">
+          <image src="{{item.picUrl}}" class="slide-image" />
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+  
+  <view class="real-time-msg" wx:if="{{list.page1001.rollData.length > 0}}">
+   <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+        <block wx:for="{{list.page1001.rollData}}" wx:for-item="real" wx:key="{{index}}">
+            <navigator url="../play/play?url={{real.playUrl}}&id={{real.indexs}}&name={{real.name}}&cid={{real.cid}}&currentPage={{currentPage}}" open-type="navigate">
+                <swiper-item>
+                <view class="swiper_item">{{real.name}}</view>
+                </swiper-item>
+            </navigator>
+        </block>
+    </swiper>
+  </view>
+
+   <view>
+        <view class="view-content">
+        <view class="view-content-title">
+            <text class="title">直播大事件</text>
+        </view>
+        <view class="live-content" wx:for="{{liveData}}" wx:key="{{index}}">
+            <view class="time-zome">
+                <view>
+                    <view class="in time-left">
+                    <view class="time-left-time"><text class="major">{{item.day}}</text>{{item.date}}</view>
+                    <view class="time-left-date">{{item.time}}</view>
+                    </view>
+                    <view class="in time-link">
+                        <view class="time-tv-name">{{item.tvName}}</view>
+                        <view class="time-movie-name">{{item.moiveName}}</view>
+                        <view class="point"></view>    
+                    </view>
+                </view>
+            </view>
+            <view class="attentionBtn">+ 关注</view>
+        </view>
+        <view class="load-more" bindtap="loadingtv" wx:if="{{isLoadTv}}">点击加载更多节目...</view>
+        </view>
+    </view>
+
+    <view>
+        <view class="view-content">
+        <view class="view-content-title">
+            <text class="title">电视台</text>
+        </view>
+        <view class="Tv-content">
+            <view class="tv-list">
+                <image src="../../../image/sc.png" class="live-img"></image>
+                <view class="tv-name">四川电视台</view>  
+            </view>
+             <view class="tv-list">
+                <image src="../../../image/gx.png" class="live-img"></image>
+                <view class="tv-name">广西电视台</view>  
+            </view>
+             <view class="tv-list">
+                <image src="../../../image/sd.png" class="live-img"></image>
+                <view class="tv-name">山东电视台</view>  
+            </view>
+             <view class="tv-list">
+                <image src="../../../image/sh.png" class="live-img"></image>
+                <view class="tv-name">上海电视台</view>  
+            </view>
+             <view class="tv-list">
+                <image src="../../../image/cd.jpg" class="live-img"></image>
+                <view class="tv-name">成都电视台</view>  
+            </view>
+             <view class="tv-list">
+                <image src="../../../image/hlj.png" class="live-img"></image>
+                <view class="tv-name">黑龙江电视台</view>  
+            </view>
+        </view>
+        <view class="load-more">点击加载更多电视台...</view>
+        </view>
+    </view>
+</view>

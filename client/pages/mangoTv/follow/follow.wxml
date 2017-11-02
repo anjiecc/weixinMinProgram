@@ -1,0 +1,41 @@
+<view class="noAttention">
+    <view class="gtext">
+        还没有任何关注哦
+    </view>
+    <view class="gtext">
+        添加关注尽享精彩视频
+    </view>
+</view>
+
+<view class="recommend">
+<view>
+    <view class="view-content">
+        <view class="view-content-title">
+            <text class="title">近期热门</text>
+        </view>
+        <view class="g-content">
+            <view class="g-bar" wx:for="{{list}}" wx:key="{{index}}" wx:for-item="items">
+                <navigator url="../play/play?url={{items.playUrl}}&id={{item.indexs}}&name={{items.name}}&cid={{items.cid}}&currentPage={{currentPage}}">
+                <view class="gimg">
+                    <image src="{{items.picUrl}}" style="width:100%;height:100%"/>
+                    <text class="gtime">{{items.tag}}</text>
+                </view>
+                </navigator>
+                <view class="g-list">
+                    <view>
+                        <view class="line main-title">
+                        {{items.name}}
+                        </view>
+                        <view class="line des">
+                        {{items.desc}}
+                        </view>
+                    </view>
+                    <view class="attentionBtn">+ 关注</view>
+                </view>                 
+            </view>
+        </view>
+        <view class="load-more" bindtap="loading" wx:if="{{isLoad}}">点击加载更多节目...</view>
+         <view class="no-load-more" wx:if="{{!isLoad}}">-------我也是有底线的-------</view>
+    </view>
+</view>
+</view>

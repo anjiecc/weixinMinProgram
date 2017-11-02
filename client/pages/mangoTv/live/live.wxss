@@ -1,0 +1,162 @@
+.in {
+    display: inline-block;
+}
+
+.index-content .slide-image {
+    width: 100%;
+    height: 100%;
+}
+
+.real-time-msg {
+    width: 100%;
+    height: 80rpx;
+    text-align: center;
+    font-size: 30rpx;
+    color: #6a6a6a;
+    background-color: #fff;
+    line-height: 80rpx;
+}
+
+.swiper_container {
+    height: 55rpx;
+    width: 80vw;
+}
+
+.swiper_item {
+    font-size: 30rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    color: #6a6a6a;
+    background-color: #fff;
+    text-align: center;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+}
+
+.view-content {
+    margin-top: 20rpx;
+    background-color: #fff;
+    /* height:400rpx; */
+}
+
+.view-content-title {
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+    justify-content: space-between
+}
+
+.title {
+    font-size: 35rpx;
+    color: #000;
+    font-weight: 600;
+}
+
+.title:before {
+    content: " ";
+    border-left: 8rpx solid #df692a;
+    margin-right: 10rpx;
+}
+
+.major {
+    font-size: 40rpx;
+    font-weight: 600;
+}
+
+.time-left-time {
+    font-size: 26rpx;
+    color: #6a6a6a
+}
+
+.time-left-date {
+    font-size: 26rpx;
+    color: #6a6a6a;
+    text-align: right;
+}
+
+.time-tv-name {
+    font-size: 32rpx;
+    font-weight: 600;
+}
+
+.time-movie-name {
+    font-size: 28rpx;
+    color: #6a6a6a
+}
+
+.attentionBtn {
+    width: 95rpx;
+    height: 40rpx;
+    font-size: 28rpx;
+    padding: 5rpx 15rpx;
+    background-color: #fff;
+    color: #df692a;
+    border-radius: 20rpx;
+    border: 1px solid #df692a;
+    margin-top: 35rpx;
+    line-height: 40rpx;
+}
+
+.live-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15rpx;
+}
+
+.time-link {
+    height: 130rpx;
+    padding-left: 20rpx;
+    padding-top: 30rpx;
+    margin-left: 20rpx;
+    border-left: 1px dotted rgb(112, 112, 112);
+    position: relative;
+}
+
+.point {
+    width: 20rpx;
+    height: 20rpx;
+    border-radius: 50%;
+    background-color: rgb(126, 126, 126);
+    position: absolute;
+    top: 49%;
+    left: -10rpx;
+}
+
+.load-more {
+    font-size: 30rpx;
+    color: #df692a;
+    width: 100%;
+    text-align: center;
+    padding: 20rpx 0;
+}
+
+.Tv-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10rpx;
+}
+
+.tv-list {
+    width: 200rpx;
+    height: 200rpx;
+    padding: 5rpx 15rpx;
+    border: 1rpx solid #e0e0e0;
+    margin-left: 10rpx;
+    margin-bottom: 10rpx;
+    text-align: center;
+}
+
+.live-img {
+    width: 150rpx;
+    height: 150rpx;
+}
+
+.tv-name {
+    font-size: 30rpx;
+    color: #000;
+}

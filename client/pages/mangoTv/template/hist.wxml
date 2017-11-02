@@ -1,0 +1,10 @@
+<scroll-view scroll-x class="my-scroll" scroll-left="{{scrollLeft}}">
+    <view class="my-info">
+        <view class="my-layout" wx:for="{{playList}}" wx:key="{{index}}">
+            <view class="my-info-img">
+                <image class="img" src="{{item.picUrl}}"/>
+            </view>
+            <view class="my-info-text">{{item.name}}</view>
+        </view>
+    </view>    
+</scroll-view>

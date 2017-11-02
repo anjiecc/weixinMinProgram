@@ -1,0 +1,19 @@
+<view class="ipt-wrap">
+    <input placeholder="输入16或17位兑换码" maxlength="17" class="vip-change-ipt"/>
+    <input placeholder="输入验证码" maxlength="4" class="vip-change-ipt"/>
+    <view class="certification">
+        <view class="m">
+           {{code}}
+        </view>
+        <text class="change" bindtap="change">更换一张</text>
+    </view>    
+</view>
+
+<view class="vip-btn">
+<button type="primary" class="vipsubmitBtn" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> 立即兑换 </button>
+</view>
+
+<view class="tips-wrap">
+    <text class="tips">输入兑换卡号可以领取会员权益，领取过程中有任何疑问可以联系@Author:Anjie.Chen,该页面不具备任何功能,请下载正版芒果TVApp观看视频和享有会员权益</text>
+</view>

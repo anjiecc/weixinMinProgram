@@ -1,0 +1,53 @@
+.help-title {
+    font-size: 32rpx;
+    color: rgb(211, 211, 211);
+    padding: 0 20rpx;
+}
+
+.help-list {
+    font-size: 30rpx;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 100rpx;
+    line-height: 100rpx;
+    padding: 0 20rpx;
+    margin-top: 5rpx;
+}
+
+.help-name {
+    color: #000;
+}
+
+.h-img {
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: -9rpx;
+}
+
+.author {
+    font-size: 30rpx;
+    color: rgb(252, 137, 6);
+}
+
+.help-tip {
+    font-size: 26rpx;
+    width: 100%;
+    height: 200rpx;
+    color: #000;
+    text-align: center;
+    margin-top: 60rpx;
+}
+
+.help-war {
+    margin-top: 10rpx;
+}
+
+.submitBtn {
+    width: 100%;
+    height: 100rpx;
+    background-color: rgb(255, 96, 5);
+    color: #fff;
+    text-align: center;
+    line-height: 100rpx;
+}

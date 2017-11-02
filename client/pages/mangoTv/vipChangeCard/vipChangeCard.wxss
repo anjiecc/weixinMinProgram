@@ -1,0 +1,61 @@
+.other-button-hover {
+    background-color: blue;
+}
+
+.ipt-wrap {
+    margin-top: 50rpx;
+    position: relative;
+}
+
+.vip-change-ipt {
+    height: 90rpx;
+    color: #646464;
+    background-color: #fff;
+    padding-left: 20rpx;
+    margin-bottom: 10rpx;
+    font-size: 32rpx;
+}
+
+.m {
+    width: 130rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    background-color: #fd5e02;
+    color: #fff;
+    font-size: 26rpx;
+}
+
+.change {
+    font-size: 26rpx;
+    color: #838383;
+    margin: 15rpx 0 0 35rpx;
+}
+
+.certification {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 115rpx;
+    right: 25rpx;
+    z-index: 999;
+}
+
+.vip-btn {
+    padding: 30rpx 20rpx;
+}
+
+.vip-btn .vipsubmitBtn {
+    background-color: #fd5e02;
+    color: #fff;
+}
+
+.tips-wrap {
+    margin-top: 50rpx;
+    padding: 0 20rpx;
+}
+
+.tips {
+    font-size: 30rpx;
+    color: rgb(117, 116, 116);
+}

@@ -1,0 +1,25 @@
+<view>
+  <video src="{{url}}" style="width:100%"></video>
+  <view class="play-content">
+    <text class="play-title">播单</text>
+    <text class="play-name">{{name}}</text>
+    <view class="play-num">{{cid}}次播放</view>
+  </view>
+  <view class="play-list" wx:if="{{data.list.length >= 1}}">
+    <text class="play-list-title">播放列表 ({{data.list.length}})</text>
+    <view wx:for="{{data.list}}" wx:key="{{item.picUrl}}" class="play-list-wrap">
+    <navigator>
+      <view class="play-list-content">
+        <view class="play-list-content-left">
+          <image src="{{item.picUrl}}" class="img" />
+        </view>
+        <view class="play-list-content-right">
+          <view class="play-list-name">{{item.name}}</view>
+          <view class="play-num">{{item.cid}}次播放</view>
+        </view>
+      </view>
+    </navigator>
+    </view>
+  </view>
+  <view class="no" wx:if="{{data.list.length <= 0 || !data.list}}">暂时未找到相关视频列表!</view>
+</view>

@@ -1,0 +1,24 @@
+<view class="index-container">
+  <scroll-view class="wrap" scroll-x scroll-with-animation="{{true}}" bindscroll="bindscroll" scroll-left="{{left}}">
+    <view wx:for="{{topBarList}}" id="{{item.id}}" wx:key="{{item.id}}" bindtap="tapPage" class="topNavList" style="{{currentPage === index ? actived : noactived}}">
+      {{item.name}}
+      <view class="nav-line" wx:if="{{currentPage === index}}"></view>
+    </view>
+  </scroll-view>
+  <view class="index-content" style="{{pageHeight}}">
+    <swiper indicator-dots="{{false}}" autoplay="{{false}}" interval="{{interval}}" duration="{{duration}}" style="{{pageHeight}}" current="{{currentPage}}" bindchange="changePage">
+      <block wx:for="{{topBarList}}" wx:key="{{item.id}}">
+        <swiper-item>
+          <scroll-view scroll-y="{{true}}" scroll-with-animation="{{true}}" style="{{pageHeight}}">
+              <view class="{{item.id}}" wx:if="{{item.id === '1001'}}"><include src="../template/featured"/></view>
+              <view class="{{item.id}}" wx:if="{{item.id === '1002'}}"><include src="../template/single"/></view>
+              <view class="{{item.id}}" wx:if="{{item.id === '1003'}}"><include src="../template/variety"/></view>
+              <view class="{{item.id}}" wx:if="{{item.id === '1004'}}"><include src="../template/TVseries"/></view>
+              <view class="{{item.id}}" wx:if="{{item.id === '1005'}}"><include src="../template/movie"/></view>
+              <view class="{{item.id}}" wx:if="{{item.id === '1006'}}"><include src="../template/children"/></view>
+          </scroll-view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
